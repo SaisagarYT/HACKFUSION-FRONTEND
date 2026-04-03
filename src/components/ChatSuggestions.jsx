@@ -14,11 +14,18 @@ const suggestions = [
 
 export default function ChatSuggestions({ onSuggestionClick }) {
   return (
-    <div className="flex gap-3 w-full max-w-3xl mx-auto mb-4 px-2 overflow-x-auto scrollbar-hide">
+    <div
+      className="flex gap-3 mb-4 px-2 overflow-x-auto scrollbar-hide"
+      style={{
+        width: '100vw',
+        maxWidth: '100vw',
+        minWidth: '100vw',
+      }}
+    >
       {suggestions.map((s, i) => (
         <button
           key={i}
-          className="bg-surface rounded-2xl px-5 py-3 flex flex-col items-start shadow-sm border border-border min-w-[200px] max-w-xs transition hover:shadow-md focus:outline-none"
+          className="bg-surface rounded-2xl px-5 py-3 flex flex-col items-start shadow-sm border border-border min-w-[220px] max-w-[220px] transition hover:shadow-md focus:outline-none flex-shrink-0"
           onClick={() => onSuggestionClick && onSuggestionClick(s)}
         >
           <span className="font-semibold text-textPrimary text-base leading-tight mb-1 text-left">

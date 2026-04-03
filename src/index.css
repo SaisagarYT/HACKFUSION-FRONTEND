@@ -1,10 +1,6 @@
-/* Hide scrollbar utility */
-.hide-scrollbar {
-	scrollbar-width: none; /* Firefox */
-	-ms-overflow-style: none; /* IE 10+ */
-}
-.hide-scrollbar::-webkit-scrollbar {
-	display: none; /* Chrome/Safari/Webkit */
+
+*{
+  scrollbar-width: none
 }
 
 
@@ -28,8 +24,26 @@ body {
 	background-color: var(--color-bg);
 	color: var(--color-text-primary);
 	font-family: "Poppins", sans-serif;
-  /* font-family: "Bebas Neue", sans-serif; */
+	/* font-family: "Bebas Neue", sans-serif; */
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
 
+#root, #app {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 
 /* Utility classes for custom theme colors */
