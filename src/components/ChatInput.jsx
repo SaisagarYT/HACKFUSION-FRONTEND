@@ -3,7 +3,7 @@ import { Icon } from '@iconify/react';
 
 export default function ChatInput({ value, onChange, onSend, onKeyDown, loading }) {
   return (
-    <div className="sticky bottom-0 z-20 w-full flex justify-center items-end py-8">
+    <div className="sticky bottom-0 z-20 w-full flex justify-center items-end pb-16">
       <div className="w-full max-w-3xl flex justify-center">
         <div className="flex items-center w-full bg-[#232323] rounded-full px-6 py-3 gap-4 shadow-lg border border-[#444]" style={{ minHeight: 56 }}>
           <Icon icon="mdi:plus" className="text-white opacity-70" width={22} height={22} />

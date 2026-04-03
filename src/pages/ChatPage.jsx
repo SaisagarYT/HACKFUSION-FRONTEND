@@ -4,6 +4,7 @@ import UserMessage from "../components/UserMessage";
 import SystemMessage from "../components/SystemMessage";
 import StructuredOutputCard from "../components/StructuredOutputCard";
 import ChatInput from "../components/ChatInput";
+import ChatSuggestions from "../components/ChatSuggestions";
 
 const mockMessages = [
   { type: "user", text: "Need electrician" },
@@ -70,7 +71,7 @@ export default function ChatPage() {
       <div className="flex items-center justify-between px-4 py-5 border-b border-border bg-surface sticky top-0 z-20">
         <div className="flex items-center gap-3">
           <Icon icon="mdi:menu" width={28} height={28} className="text-primary" />
-          <h1 className="font-semibold text-lg tracking-tight">KaamSetu</h1>
+          <h1 className="font-semibold text-lg tracking-tight">KAAMSETU</h1>
         </div>
       </div>
       {/* Chat Area */}
@@ -86,6 +87,8 @@ export default function ChatPage() {
         )}
         <div ref={messagesEndRef} />
       </div>
+      {/* Suggestions */}
+      <ChatSuggestions onSuggestionClick={s => setInput(s.title + ' ')} />
       {/* Input Box */}
       <ChatInput
         value={input}
