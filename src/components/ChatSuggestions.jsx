@@ -2,14 +2,17 @@ import React from "react";
 
 const suggestions = [
   {
-    title: "Create an illustration",
-    subtitle: "for a bakery",
+    title: "Find an electrician",
+    subtitle: "for urgent home repairs",
   },
   {
-    title: "Write a thank-you note",
-    subtitle: "to my colleague",
+    title: "Book a plumber",
+    subtitle: "for kitchen or bathroom issues",
   },
-  // Add more suggestions as needed
+  {
+    title: "Hire a carpenter",
+    subtitle: "for furniture or woodwork needs",
+  },
 ];
 
 export default function ChatSuggestions({ onSuggestionClick }) {

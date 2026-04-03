@@ -9,7 +9,7 @@ export default function ChatInput({ value, onChange, onSend, onKeyDown, loading 
           <Icon icon="mdi:plus" className="text-white opacity-70" width={22} height={22} />
           <input
             className="flex-1 bg-transparent outline-none text-base text-white placeholder:text-gray-400 border-none focus:ring-0"
-            placeholder="Ask Lovable to build an i"
+            placeholder="Describe your task or request a worker..."
             value={value}
             onChange={e => onChange(e.target.value)}
             onKeyDown={onKeyDown}
